@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" type="text/css" th:href="@{webPageStyle.css}">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<header class="main-header">
+    <p class="header-text">City temperature</p>
+
+</header>
+<div class="find-city-form">
+    <form th:action="@{/weather}" method="get">
+        <input class="input-city" name="cityName" placeholder="Enter your city" type="text" >
+        <button class="find-city-button">Find</button>
+    </form>
+
+</div>
+
+
+<div th:if="${cityName == null}">
+
+
+</div>
+
+<div class="main-info" th:if="${cityName != null && errorMessage == null }">
+    <p class="city" th:text="${cityName} + ', ' + ${countryName}"></p>
+    <p class="weather" th:text="${weather} "></p>
+    <p class="temp" th:text="${weatherTemp}  + ' ℃' "></p>
+    <p class="disc" th:text="${weatherDisc}   "></p>
+
+
+</div>
+
+<div class="error-container" th:if="${errorMessage != null}">
+    <p class="error-message" th:text="${errorMessage}"></p>
+</div>
+
+
+</p>
+
+
+</body>
+</html>

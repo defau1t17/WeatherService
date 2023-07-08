@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.main-header {
+    background-color: #e8dedb;
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-text {
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    color: #d1fefe;
+    padding-top: 30px;
+    font-family: Consolas;
+}
+
+.find-city-form {
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.input-city {
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+    font-family: "Times New Roman";
+    color: #ffbeb8;
+    border-radius: 3px;
+    border: none;
+    border-bottom: 2px solid #ddeeed;
+}
+
+.find-city-button {
+    background-color: #FFFFFF;
+    margin-left: 20px;
+    width: 150px;
+    border: 3px solid #ddeeed;
+    font-family: "Times New Roman";
+    color: #c1e3e2;
+    font-weight: 600;
+    font-size: 20px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.main-info {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.city {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: "Times New Roman";
+    color: #ffbeb8;
+}
+
+.weather {
+    margin-top: 10px;
+    font-family: "Times New Roman";
+    color: #ffbeb8;
+    font-size: 20px;
+}
+
+.disc {
+    margin-top: 10px;
+    font-family: "Times New Roman";
+    color: #ffbeb8;
+    font-size: 17px;
+}
+
+.temp {
+    margin-top: 10px;
+    font-family: "Times New Roman";
+    color: #ffbeb8;
+    font-size: 17px;
+}
+
+.error-container {
+    margin-top: 40px;
+}
+
+.error-message {
+    color: coral;
+    font-size: 23px;
+    font-family: "Times New Roman";
+}
+
+
